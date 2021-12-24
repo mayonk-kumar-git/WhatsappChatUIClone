@@ -14,9 +14,5 @@ To deploy this project run
 
 
 ## Screenshots
-
-![App Screenshot](https://github.com/mayonk-kumar-git/ReactNativeTest/blob/master/screenShots/Screenshot_20211224-185639_Expo%20Go.jpg?raw=true)
-
-
-![Logo](https://github.com/mayonk-kumar-git/ReactNativeTest/blob/master/screenShots/Screenshot_20211224-185639_Expo%20Go.jpg?raw=true)
+<img src="https://github.com/mayonk-kumar-git/ReactNativeTest/blob/master/screenShots/Screenshot_20211224-185639_Expo%20Go.jpg?raw=true" width="300" />  <img src="https://github.com/mayonk-kumar-git/ReactNativeTest/blob/master/screenShots/Screenshot_20211224-185650_Expo%20Go.jpg?raw=true" width="300" />  <img src="https://github.com/mayonk-kumar-git/ReactNativeTest/blob/master/screenShots/Screenshot_20211224-185729_Expo%20Go.jpg?raw=true" width="300" />  <img src="https://github.com/mayonk-kumar-git/ReactNativeTest/blob/master/screenShots/Screenshot_20211224-185737_Expo%20Go.jpg?raw=true" width="300" />
 
