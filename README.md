@@ -6,11 +6,12 @@ This app was developed using React Native Expo.
 
 ## Deployment
 
-To deploy this project run
+To run this project use
 
 ```bash
   expo start
 ```
+Then scan the QR code using 'Expo Go" app on your phone or run it on emulator 
 
 
 ## Screenshots
