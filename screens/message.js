@@ -44,11 +44,6 @@ export default function Message({ navigation, route }) {
     });
   });
 
-  //sendinging message function
-  const sendMessage = () => {
-    setInput("");
-  };
-
   return (
     <SafeAreaView style={{ flex: 1, borderColor: "white" }}>
       <StatusBar style="auto" />
@@ -62,17 +57,30 @@ export default function Message({ navigation, route }) {
             <ScrollView>
               {route.params.chat.messages.map((message) => {
                 {
-                  if (message.from == user ) {
-                    return <SentMessageBubble message={message.message} user={user} time={message.time} />;
+                  if (message.from == user) {
+                    return (
+                      <SentMessageBubble
+                        key={message.time}
+                        message={message.message}
+                        user={user}
+                        time={message.time}
+                      />
+                    );
                   } else {
-                    return <ReceivedMessageBubble message={message.message} sender={message.from} time={message.time}/>;
+                    return (
+                      <ReceivedMessageBubble
+                        key={message.time}
+                        message={message.message}
+                        sender={message.from}
+                        time={message.time}
+                      />
+                    );
                   }
                 }
               })}
             </ScrollView>
             <View style={styles.footer}>
               <TouchableOpacity
-                onPress={sendMessage}
                 activeOpacity={0.5}
                 style={styles.footerButtons}
               >
@@ -85,7 +93,7 @@ export default function Message({ navigation, route }) {
                 style={styles.messageInput}
               />
               <TouchableOpacity
-                onPress={sendMessage}
+                onPress={() => setInput("")}
                 activeOpacity={0.5}
                 style={styles.footerButtons}
               >
@@ -96,14 +104,12 @@ export default function Message({ navigation, route }) {
                 />
               </TouchableOpacity>
               <TouchableOpacity
-                onPress={sendMessage}
                 activeOpacity={0.5}
                 style={styles.footerButtons}
               >
                 <Ionicons name="ios-camera-outline" size={24} color="#2b68e6" />
               </TouchableOpacity>
               <TouchableOpacity
-                onPress={sendMessage}
                 activeOpacity={0.5}
                 style={styles.footerButtons}
               >
